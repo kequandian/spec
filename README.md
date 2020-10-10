@@ -9,7 +9,13 @@
 > * 先定义业务测试用例, 开发人员依照测试用例进行开发
 > * 开发质量 benchmark: 测试到问题提交到 github issue, 不通过测试用例测试影响绩效（自动化统计), 自行测试
 
+## 开发规范 领域驱动逻辑原型开发
+> * 定义数据库设计原型, 关系字段包括 [id, name, data{json}, status, owner_id, queue_id，...]
+> * 首先进行核心逻辑的开发业务原型，定义业务层sql查询任务列表
+
+
 ## 开发规范 接口预定义 前端界面对接优先
+> *  开发人员可进行详细的数据库实体设计，并由[dev-cli/dbToCrudless.py](https://github.com/kequandian/dev-cli/blob/master/dbToCrudless.py)脚本生成基础配置文件 crudless.yml
 > *  依据项目业务流程图以及原型，开发人员以及测试人员均可预定义api返回字段 [Record, Model]，首先完成前端对接
 
 
@@ -17,10 +23,6 @@
 > * 通过 excel 定义菜单操作以及字段列表 (转换为  crudless.yml)
 > * 在excel表中定义明确的操作流程
 
-
-## 开发规范 领域驱动逻辑原型开发
-> * 定义数据库设计原型, 关系字段包括 [id, name, data{json}, status, owner_id, queue_id，...]
-> * 首先进行核心逻辑的开发业务原型，定义业务层sql查询任务列表
 
 ## 开发规范 系统框架支持插件开发
 > * CRUD 
