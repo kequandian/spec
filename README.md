@@ -56,6 +56,7 @@
 > * 通过 jenkins, archiva 实现半自动化
 > * 运营环境 工人测试通过  工人触发部署到运营环境  (仅针对运营中的重要项目）
 > * app-schedule等需独立模块，仅由生产环境**standalone**依赖
+> * 准备好提交即部署的步聚，并逐一Sanity测试通过
 
 ## 开发规范 服务监控
 > * 对服务器进行有效管理，充分利用 prometheus agent + sandbox 对每台服务器性能进行监控
